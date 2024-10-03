@@ -72,16 +72,17 @@ The `Reset` button should clear the purchased status from all items, allowing th
 
 #### Thursday Group Instructions / Roles
 
+# Farhan
 <!-- shoppingRouter // backend setup -> in server // shoppingList Router
 -- create a new file shoppingList router
 -- work between server.js and shoppingListRouter files
 
-
+# Nick
 <! --GET // fetch items > // in App. jsx
 -- create get / fetch items in app jsx
 -- work with router teammate on route specific info
 
-
+# Tom
 <POST routes in alternative file-> // update List file
 -- create Update list file
 -- create post router in file
@@ -89,6 +90,7 @@ The `Reset` button should clear the purchased status from all items, allowing th
 -- export file to app jsx
 
 
+# Bruce
 < Shopping List form / render> // shopping list form file
 -- create the shopping list file
 -- import the props from the get route / post
