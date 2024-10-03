@@ -8,7 +8,7 @@ CREATE TABLE "shoppingList" (
 	"unit" VARCHAR(20)
 );
 
-INSERT INTO "shoppingList"("name", "quantity", "unit")
+INSERT INTO "shoppingList" ("name", "quantity", "unit")
 VALUES
 ('Cola', '2', '04.25'),
 ('Bread', '1', '2.75'),

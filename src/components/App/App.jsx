@@ -7,6 +7,7 @@ import ShoppingListForm from '../ShoppingListForm/ShoppingListForm.jsx';
 
 function App() {
 
+    let [allItems, setAllItems] = useState([])
     let [items, setItems] = useState([]);
     let [itemInput, setItemInput] = useState('');
 
@@ -15,7 +16,7 @@ function App() {
         // get request
         axios.get('/api/shoppingList').then(response => {
         console.log('response data:   ', response.data)   
-        
+        setAllItems(response.data)
         }).catch(err => {
             console.error('GET Error', err)
         })
