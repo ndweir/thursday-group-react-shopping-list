@@ -31,7 +31,7 @@ function App() {
             <main>
                 <div>
                     <h2>Add an Item</h2>
-                    <ShoppingListForm />
+                    <ShoppingListForm fetchShoppingList = {fetchShoppingList} />
                 </div>
                 
                 <div>
