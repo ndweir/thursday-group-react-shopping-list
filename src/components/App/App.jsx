@@ -3,7 +3,7 @@ import axios from 'axios';
 import {useState, useEffect} from 'react';
 import Header from '../Header/Header.jsx';
 import './App.css';
-
+import ShoppingListForm from '../ShoppingListForm/ShoppingListForm.jsx';
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
             <main>
                 <div>
                     <h2>Add an Item</h2>
-                    new shopping list form goes here!
+                    <ShoppingListForm />
                 </div>
                 
                 <div>
