@@ -1,14 +1,27 @@
 import React from 'react';
-
-import Header from '../Header/Header.jsx'
+import axios from 'axios';
+import {useState, useEffect} from 'react';
+import Header from '../Header/Header.jsx';
 import './App.css';
 
 
 function App() {
 
-    // fetch shopping items
+    let [items, setItems] = useState([]);
+    let [itemInput, setItemInput] = useState('');
 
-    // axios get request
+    // fetch shopping items
+    const fetchItems = () => {
+        // get request
+        axios.get('/api/shoppingList').then(response => {
+        console.log('response data:   ', response.data)   
+        
+        }).catch(err => {
+            console.error('GET Error', err)
+        })
+    }
+
+
 
 
 
@@ -16,7 +29,15 @@ function App() {
         <div className="App">
             <Header />
             <main>
-                <p>Under Construction...</p>
+                <div>
+                    <h2>Add an Item</h2>
+                    new shopping list form goes here!
+                </div>
+                
+                <div>
+                    <h2>Shopping List</h2>
+                    current items buy and purchase here!
+                </div>
             </main>
         </div>
     );
