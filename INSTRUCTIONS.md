@@ -68,3 +68,21 @@ The `Reset` button should clear the purchased status from all items, allowing th
 - Currently, if you typo something, it must be removed and re-added to fix it. An edit feature would be a great enhancement. Add an `Edit` button which will have the existing data show in the input form at the top of the page to allow an easier edit. 
 
   > Hint: For the edit, add a boolean indicator to the component state to indicate if the item is in view or edit mode. 
+
+
+#### Thursday Group Instructions / Roles
+
+<!-- shoppingRouter // backend setup ->
+
+
+
+
+<! --GET // Render function >
+
+
+
+<POST routes in alternative file->
+
+
+
+< Shopping List form / render>
