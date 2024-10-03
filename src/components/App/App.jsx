@@ -11,7 +11,7 @@ function App() {
     let [itemInput, setItemInput] = useState('');
 
     // fetch shopping items
-    const fetchItems = () => {
+    const fetchShoppingList = () => {
         // get request
         axios.get('/api/shoppingList').then(response => {
         console.log('response data:   ', response.data)   

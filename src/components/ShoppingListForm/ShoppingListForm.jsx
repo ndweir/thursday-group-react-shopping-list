@@ -22,7 +22,7 @@ const handleSubmit = (event) => {
     //Axios 'POST' request (name, quantity, unit)
     axios({
         method: 'POST',
-        url: '/api/Shoppinglist',
+        url: '/api/shoppingList',
         data : {
             name: itemInput,
             quantity: parseFloat(quantityInput), //Converts number into a usable decimal
