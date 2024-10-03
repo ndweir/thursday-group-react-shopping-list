@@ -25,8 +25,8 @@ const handleSubmit = (event) => {
         url: '/api/shoppingList',
         data : {
             name: itemInput,
-            quantity: parseFloat(quantityInput), //Converts number into a usable decimal
-            unit: unitInput || null //set to null if no unit provided
+            quantity: quantityInput, //Converts number into a usable decimal
+            unit: unitInput //set to null if no unit provided
         }
     }).then(response => {
         console.log('Item added successfully!', response.data); //Success! response: data

@@ -23,7 +23,7 @@ router.get('/', (req, res)=>{
 })
 router.post('/', (req, res)=>{
     const shoppingList = req.body;
-    const sqlText = `INSERT INTO shoppingList (name, quantity, unit) 
+    const sqlText = `INSERT INTO "shoppingList" ("name", "quantity", "unit") 
                         values ($1, $2, $3);`
     pool.query(sqlText, [shoppingList.name, shoppingList.quantity, shoppingList.unit])
         .then ((result)=>{
