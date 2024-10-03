@@ -5,6 +5,13 @@ import './App.css';
 
 
 function App() {
+
+    // fetch shopping items
+
+    // axios get request
+
+
+
     return (
         <div className="App">
             <Header />
