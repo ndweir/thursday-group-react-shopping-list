@@ -8,7 +8,6 @@ import ShoppingListForm from '../ShoppingListForm/ShoppingListForm.jsx';
 function App() {
 
     let [allItems, setAllItems] = useState([])
-    let [items, setItems] = useState([]);
     let [itemInput, setItemInput] = useState('');
 
     // fetch shopping items
@@ -22,9 +21,12 @@ function App() {
         })
     }
 
+    useEffect(() => {
+        fetchShoppingList()
+    }, [])
 
 
-
+    console.log('all items', allItems)
 
     return (
         <div className="App">

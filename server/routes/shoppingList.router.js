@@ -6,10 +6,10 @@ const pool = require('../modules/pool.js');
 
 
 router.get('/', (req, res)=>{
-    const sqlText = `SELECT * FROM shoppingList ORDER BY name; `
+    const sqlText = `SELECT * FROM "shoppingList" ORDER BY "name"; `
     pool.query(sqlText)
         .then ((result)=>{
-            console.log('full result from server', result);
+          //  console.log('full result from server', result);
             console.log(`Rows property only in result from database`, result.rows)
             res.send(result.rows);
         
