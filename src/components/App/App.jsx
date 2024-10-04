@@ -4,11 +4,11 @@ import {useState, useEffect} from 'react';
 import Header from '../Header/Header.jsx';
 import './App.css';
 import ShoppingListForm from '../ShoppingListForm/ShoppingListForm.jsx';
+import ShoppingListRender from '../ShoppingListRender/ShoppingListRender.jsx';
 
 function App() {
 
     let [allItems, setAllItems] = useState([])
-    let [itemInput, setItemInput] = useState('');
 
     // fetch shopping items
     const fetchShoppingList = () => {
@@ -39,7 +39,7 @@ function App() {
                 
                 <div>
                     <h2>Shopping List</h2>
-                    current items buy and purchase here!
+                    <ShoppingListRender allItems = {allItems} />
                 </div>
             </main>
         </div>
