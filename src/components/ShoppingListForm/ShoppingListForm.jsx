@@ -32,6 +32,10 @@ const handleSubmit = (event) => {
         console.log('Item added successfully!', response.data); //Success! response: data
         props.fetchShoppingList(); //Refreshes the shopping list
          //Clears input fields after submission
+
+    //    props.map((x) => console.log(x.name))
+      console.log('PROPS  ', props)
+
         setItemInput('');
         setQuantityInput('');
         setUnitInput('');
