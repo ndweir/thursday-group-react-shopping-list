@@ -4,7 +4,7 @@ const pool = require('../modules/pool.js');
 
 // GET ROUTE HERE FROM NICK
 
-// POST ROUTE
+// POST ROUTE from TxP
 router.post(`/`, (req, res) => {
     // console.log(`We just got a letter in GET/list`, req.body)
     const sqlText = `
